@@ -1,18 +1,84 @@
-# React + Vite
+# Job Cards UI using React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project that displays multiple job opening cards from MNC companies using reusable components, props, and object arrays.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Reusable React Components
+* Dynamic rendering using Props
+* Object Array based data management
+* Multiple Job Opening Cards
+* Responsive Card Layout
+* Clean UI Design
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React JS
+* JavaScript (ES6)
+* CSS
+* JSX
 
-## Expanding the ESLint configuration
+## Project Structure
+src/
+│
+├── components/
+│   └── Card.jsx
+│
+├── App.jsx
+├── data.js
+└── index.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Job-Opening-cards-
-# Job-Opening-cards-
+## How It Works
+
+* Job data is stored inside an object array.
+* Data is passed to components using props.
+* Cards are dynamically rendered using the map() function.
+
+Example:
+
+```javascript
+jobs.map((job)=>{
+   return <Card data={job}/>
+})
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone repository-link
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run project:
+
+```bash
+npm run dev
+```
+
+## Learning Outcomes
+
+Through this project I learned:
+
+* Creating reusable React components
+* Using Props effectively
+* Rendering data dynamically
+* Working with object arrays
+* Component based UI development
+
+## Future Improvements
+
+* Add Search Functionality
+* Add Filters
+* Backend Integration
+* Database Support
+* Apply Button Functionality
+
+## Author
+Himanshu Kumar
